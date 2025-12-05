@@ -44,3 +44,20 @@ if __name__ == "__main__":
         b = inputs[1]             
         result = my_tool.xor_gate(a, b)
         print(f"{a} | {b} |   {result}")
+
+    print("\n=== OR Gate Truth Table ===")
+    print("A | B | Output")
+    print("-------------")
+    for inputs in input_combinations:
+        a = inputs[0]
+        b = inputs[1]             
+        result = my_tool.or_gate(a, b)
+        print(f"{a} | {b} |   {result}")
+
+    print("\n=== NOT Gate Truth Table ===")
+    print("A | Output")
+    print("-------------")
+    for inputs in input_combinations:
+        a = inputs[0]            
+        result = my_tool.not_gate(a)
+        print(f"{a} |   {result}")
